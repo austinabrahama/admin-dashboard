@@ -95,7 +95,7 @@ const Sidebar = () => {
                             setSelected={setSelected}
                         />
 
-                        <Typography variant='h6' color={colors.grey[300]} sx={{ m: "15px 50 0 20px" }}>Data</Typography>
+                        {!isCollapsed && (<Typography variant='h6' color={colors.grey[300]} sx={{ m: "15px 50 0 20px" }}>Data</Typography>)}
                         <SidebarItem
                             title="Manage Team"
                             to="/team"
@@ -118,7 +118,7 @@ const Sidebar = () => {
                             setSelected={setSelected}
                         />
 
-                        <Typography variant='h6' color={colors.grey[300]} sx={{ m: "15px 50 0 20px" }}>Pages</Typography>
+                        {!isCollapsed && (<Typography variant='h6' color={colors.grey[300]} sx={{ m: "15px 50 0 20px" }}>Pages</Typography>)}
                         <SidebarItem
                             title="Profile Form"
                             to="/profile"
@@ -141,7 +141,7 @@ const Sidebar = () => {
                             setSelected={setSelected}
                         />
 
-                        <Typography variant='h6' color={colors.grey[300]} sx={{ m: "15px 50 0 20px" }}>Charts</Typography>
+                        {!isCollapsed && (<Typography variant='h6' color={colors.grey[300]} sx={{ m: "15px 50 0 20px" }}>Charts</Typography>)}
                         <SidebarItem
                             title="Bar Chart"
                             to="/bar-chart"
