@@ -121,7 +121,7 @@ const Sidebar = () => {
                         {!isCollapsed && (<Typography variant='h6' color={colors.grey[300]} sx={{ m: "15px 50 0 20px" }}>Pages</Typography>)}
                         <SidebarItem
                             title="Profile Form"
-                            to="/profile"
+                            to="/form"
                             icon={<PersonOutlinedIcon />}
                             selected={selected}
                             setSelected={setSelected}
